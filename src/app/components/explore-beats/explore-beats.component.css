@@ -1,0 +1,116 @@
+.explore-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    padding-top: 1rem 0;
+    
+  }
+  
+  .gradient-text {
+    background: linear-gradient(to right, #a855f7, #6366f1 100%);
+    /* background: linear-gradient(169deg, #7000FF 0%, #7A00FF 31.77%, #8F00FF 100%); */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
+  h1{
+    color: #fff;
+    font-size: 24px;
+  }
+
+  .refresh-btn {
+    background: transparent;
+    color: #c084fc;
+    border: 1px solid #c084fc;
+    padding: 12px 20px;
+    border-radius: 25px;
+    cursor: pointer;
+  }
+
+  
+  /* tags */
+  .tag-container {
+    display: flex;
+    gap: 12px;
+    margin: 2rem 0;
+  }
+  
+  .tag {
+    background: #1f1f1f;
+    border: 1px solid #333;
+    color: #fff;
+    padding: 0.4rem 0.7rem;
+    border-radius: 25px;
+    cursor: pointer;
+  }
+  
+  .tag:nth-child(1):hover,
+  .tag:nth-child(3):hover {
+    background: linear-gradient(110deg, #7000FF 36.5%, #8F00FF 93.9%);
+    border: none; /* Optional: remove border to make it look cleaner */
+  }
+  .tag:hover {
+    background: linear-gradient(110deg, #ffbf00 36.5%, #ffee00 93.9%);
+    border: none; /* Optional: no border */
+  }
+
+  /* search */
+  .search-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background: #383636;
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #383838;
+    width: 30%;
+  }
+  
+  .search-container input {
+    background: transparent;
+    border: none;
+    color: #fff;
+    outline: none;
+  }
+  
+
+  .beat-card-section{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem; /* adjust the gap between cards as needed */
+    margin-bottom: 1rem;
+   
+  }
+
+
+  
+
+
+
+  /* Responsive adjustments */
+
+/* For screens smaller than 1200px, reduce to 3 columns */
+@media (max-width: 1200px) {
+  .beat-card-section {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* For screens smaller than 768px, reduce to 2 columns */
+@media (max-width: 768px) {
+  .beat-card-section {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .search-container {
+    width: 90%;  /* Make search container wider on smaller screens */
+  }
+}
+
+/* For screens smaller than 480px, use 1 column */
+@media (max-width: 480px) {
+  .beat-card-section {
+    grid-template-columns: 1fr;
+  }
+}
+  

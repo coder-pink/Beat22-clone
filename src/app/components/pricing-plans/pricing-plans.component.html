@@ -1,0 +1,45 @@
+
+<section class="pricing-section">
+    <h2>Discover more with our subscription plans</h2>
+    <p>Enjoy 100% of your sales and unlimited beat uploads with our Premium & Pro plans.</p>
+  
+    <div class="plans-container">
+      <!-- Basic Plan -->
+      <div class="plan-card basic">
+        <h3>Basic Plan</h3>
+        <h1>Free</h1>
+        <p>Basic Features</p>
+        
+      </div>
+
+  
+      <!-- Premium Plan -->
+      <div class="plan-card premium">
+        <h3>Premium Plan</h3>
+        <h4><s>₹4788</s></h4>
+        <h1>₹3999/-</h1>
+        <p class="billing">billed yearly</p>
+        <button class="offer-btn">🎉 16% off on annual plans!</button>
+        <p>All basic features plus</p>
+
+        <button class="get-started-btn">Get Started</button>
+      </div>
+  
+      <!-- Pro Plan -->
+      <div class="plan-card pro">
+        <div class="recommended">⭐ Recommended for you</div>
+        <h3>Pro Plan</h3>
+        <div class="toggle-switch">
+          <button [ngClass]="{active: billingType==='monthly'}" (click)="setBilling('monthly')">Monthly</button>
+          <button [ngClass]="{active: billingType==='annually'}" (click)="setBilling('annually')">Annually</button>
+        </div>
+        <h1>₹599/-</h1>
+        <p class="billing">billed monthly</p>
+        <button class="offer-btn">🎉 17% off on annual plans!</button>
+        <p>All basic features plus</p>
+        <button class="get-started-btn">Get Started</button>
+      </div>
+    </div>
+    
+  </section>
+  

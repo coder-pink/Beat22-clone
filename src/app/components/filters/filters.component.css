@@ -1,0 +1,40 @@
+.filters-container {
+    display: flex;
+    align-items: center;
+    background-color: #1e1e1e;
+    padding: 0.3rem 0.1rem;
+    font-family: Arial, sans-serif;
+    color: #ccc;
+    margin-top: 1.6rem;
+  }
+  
+  .label {
+    margin-right: 8px;
+    font-weight: 500;
+  }
+  .dropdown-container{
+    display: flex;
+    align-items: center;
+    margin-right: 0.5rem;
+  }
+  .dropdown {
+    margin: 0 8px;
+    background-color: #1e1e1e;
+    color: #ccc;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 4px;
+    appearance: none;
+  }
+  
+  .sort-section {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+  }
+  
+  .highlighted {
+    color: #fff;
+    font-weight: bold;
+  }
+  

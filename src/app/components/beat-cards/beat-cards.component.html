@@ -1,0 +1,55 @@
+<!-- <div class="beat-cards">
+    <div class="card" *ngFor="let beat of beats">
+      <div class="image-container">
+        <img [src]="beat.cover" alt="cover" class="cover-image" />
+        <button class="play-btn">&#9658;</button>
+      </div>
+      
+      <div class="info">
+        <div class="meta">
+          <span class="bpm">{{ beat.bpm }} BPM</span>
+          <button class="price-btn">₹{{ beat.price }}</button>
+        </div>
+        <div class="title">{{ beat.title }}</div>
+        <div class="producer">{{ beat.user.username }}</div>
+      </div>
+    </div>
+  </div>
+  
+ -->
+
+
+
+
+<div class="beat-card" *ngIf="beat">
+  <div class="cover-container">
+    <img [src]="beat.cover_picture" [alt]="beat.title" class="cover" />
+    <button class="play-button">
+      <!-- <i class="fa fa-play"></i> -->
+      <span class="pi pi-play icons"></span> 
+    </button>
+  </div>
+
+  <div class="details">
+    <div class="meta">
+      <div class="bpm">
+        <i class="fa fa-sliders"></i>
+        {{ beat.tempo }}  BPM
+      </div>
+      <div class="price" *ngIf="beat.prices && beat.prices.length">
+        <i class="fa fa-shopping-cart"></i>
+        ₹{{ beat.prices[0].final_price }}
+      </div>
+    </div>
+
+    <div class="title">{{ beat.title }}</div>
+   
+    <div class="producer">
+      {{ beat.tag?.[1] || beat.owner }}
+    </div>
+
+    <div class="more-options">
+      <i class="fa fa-ellipsis-v"></i>
+    </div>
+  </div>
+</div>

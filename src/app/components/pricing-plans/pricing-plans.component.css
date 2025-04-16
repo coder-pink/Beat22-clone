@@ -1,0 +1,128 @@
+.pricing-section {
+    background: #1e1e1e;
+    color: white;
+    text-align: center;
+    padding: 50px 20px;
+  }
+  
+  .pricing-section h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+  }
+  
+  .pricing-section p {
+    font-size: 16px;
+    color: #ccc;
+  }
+  
+  .plans-container {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 40px;
+    flex-wrap: wrap;
+  }
+  
+  .plan-card {
+    background: #252525;
+    padding: 20px;
+    border-radius: 20px;
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  
+  .plan-card h3 {
+    font-size: 20px;
+    margin-bottom: 12px;
+    margin-top: 12px;
+  }
+  
+  .plan-card h1 {
+    font-size: 36px;
+    margin: 10px 0;
+  }
+  
+  .plan-card p {
+    color: #ccc;
+    margin: 10px 0;
+  }
+  
+  .plan-card .billing {
+    font-size: 14px;
+  }
+  
+  .plan-card .offer-btn {
+    background: transparent;
+    color: white;
+    border: 1px solid #999;
+    border-radius: 25px;
+    padding: 6px 12px;
+    margin: 12px 0;
+    cursor: pointer;
+  }
+  
+  .plan-card.basic {
+    background: #2a2a2a;
+    
+  }
+  
+  .plan-card.premium {
+    background: #21357b;
+  }
+  
+  .plan-card.pro {
+    background: linear-gradient(135deg, #8000ff, #3b007b);
+    position: relative;
+  }
+  
+  .plan-card .recommended {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: #cc00ff;
+    padding: 8px;
+    font-size: 14px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+  }
+  
+  .toggle-switch {
+    background: #111;
+    border-radius: 20px;
+    display: flex;
+    margin: 10px 0;
+  }
+  
+  .toggle-switch button {
+    border: none;
+    padding: 5px 14px;
+    color: #ccc;
+    background: transparent;
+    border-radius: 20px;
+    cursor: pointer;
+  }
+  
+  .toggle-switch button.active {
+    background: #252525;
+    color: white;
+  }
+  
+
+  .checkmark {
+    color: #00c853;
+    margin-right: 10px;
+  }
+  
+  .get-started-btn {
+    margin-top: 20px;
+    background-color: #a90aff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+  }

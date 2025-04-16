@@ -1,12 +1,22 @@
-import { Component } from '@angular/core';
+import { Component , AfterViewInit} from '@angular/core';
 import { RouterOutlet } from '@angular/router';
+
+
 
 @Component({
   selector: 'app-root',
   imports: [RouterOutlet],
   templateUrl: './app.component.html',
-  styleUrl: './app.component.css'
+  styleUrls: ['./app.component.css']
 })
-export class AppComponent {
-  title = 'beat22-clone';
+export class AppComponent implements AfterViewInit {
+
+  ngAfterViewInit(): void {
+    const loader = document.getElementById('app-loader');
+    if (loader) {
+      loader.style.display = 'none';
+    }
+  }
 }
+
+
