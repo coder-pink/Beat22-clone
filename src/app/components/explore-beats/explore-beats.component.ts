@@ -35,10 +35,10 @@ export class ExploreBeatsComponent implements OnInit {
   getBeats() {
     this.beatservice.getTrendingBeats().subscribe({
       next: (res: any) => {
-        console.log("response", res);
+        // console.log("response", res);
         this.beats = res.playlists[0].beats;
-        console.log("Extracted beats:", this.beats);
-        console.log(this.beats);
+        // console.log("Extracted beats:", this.beats);
+        // console.log(this.beats);
       },
       error: (err) => {
         console.error('Failed to load beats:', err);

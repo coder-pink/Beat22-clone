@@ -6,7 +6,7 @@
     justify-content: space-between;
     margin-bottom: 0.2rem;
     border-bottom: 1px solid rgba(255, 255, 255, 0.126); 
-    /* flex-wrap: wrap; */
+    flex-wrap: wrap;
 
   }
   
@@ -15,6 +15,12 @@
     align-items: center;
     gap: 24px;
    
+  }
+  
+  .logo-menu{
+    display: flex;
+    align-items: center;
+    gap: 10px;
   }
   
   .header .logo-section .logo {
@@ -62,7 +68,16 @@
     
   }
 
-
+  .menu-icon {
+    display: none;
+    font-size: 24px;
+    color: #ccc;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    outline: none;
+  }
+  
   
 
   /* ==================== Responsive Styles ==================== */
@@ -70,9 +85,10 @@
 /* Tablets and below */
 @media (max-width: 768px) {
   .header {
-    flex-direction: column;
-    align-items: flex-start;
+    /* flex-direction: column; */
+    /* align-items: flex-start; */
     gap: 12px;
+    flex-wrap: nowrap;
   }
 
   .header .logo-section {
@@ -83,7 +99,7 @@
 
   
   .header .action-buttons {
-    width: 100%;
+    /* width: 100%; */
     justify-content: flex-start;
     gap: 16px;
    
@@ -103,19 +119,20 @@
 
   }
 
-
+  
 
 }
 
 /* Mobile: Phones */
 @media (max-width: 480px) {
   .header {
+    flex-direction: column;
     padding: 10px 16px;
   }
 
   .header .logo-section {
     flex-direction: column;
-    align-items: flex-start;
+    /* align-items: flex-start; */
     gap: 10px;
   }
 
@@ -133,5 +150,12 @@
   .header .action-buttons .sell-btn {
     width: 100%;
     justify-content: center;
+  }
+  .menu-icon {
+    display: block;
+  }
+
+  .logo-menu{
+    gap: 9rem;
   }
 }

@@ -1,15 +1,17 @@
 <header class="header">
   <div class="logo-section">
-    <a routerLink="/beats">
-      <img src="/main-logo-beat22.svg" alt="Beat22 Logo" class="logo" /></a>
-
+    <div class="logo-menu">
+      <a routerLink="/beats">
+        <img src="/main-logo-beat22.svg" alt="Beat22 Logo" class="logo" />
+      </a>
+  
+      <button class="menu-icon" (click)="toggleMenu()">
+        <i class="pi pi-bars"></i>
+      </button>
+    </div>
+ 
     <app-search-bar class="header-search"></app-search-bar>
   </div>
-
-
-
-
-
 
   <div class="action-buttons">
     <a routerLink="/sign-in" class="signin">Sign In</a>
@@ -18,5 +20,5 @@
 
 </header>
 
-
 <app-beats-dropdown></app-beats-dropdown>
+<app-menu *ngIf="showMenu" (closeMenu)="closeMenu()"></app-menu>

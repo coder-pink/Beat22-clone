@@ -102,7 +102,7 @@
   /* Tablet (≤768px) */
 @media (max-width: 768px) {
   .beat-card {
-    width: 85%; /* Two per row on tablet if grid/flex is used */
+    width: 85%; 
     margin: 1rem 1%;
   }
 
