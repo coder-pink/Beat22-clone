@@ -1,31 +1,9 @@
-<!-- <div class="beat-cards">
-    <div class="card" *ngFor="let beat of beats">
-      <div class="image-container">
-        <img [src]="beat.cover" alt="cover" class="cover-image" />
-        <button class="play-btn">&#9658;</button>
-      </div>
-      
-      <div class="info">
-        <div class="meta">
-          <span class="bpm">{{ beat.bpm }} BPM</span>
-          <button class="price-btn">₹{{ beat.price }}</button>
-        </div>
-        <div class="title">{{ beat.title }}</div>
-        <div class="producer">{{ beat.user.username }}</div>
-      </div>
-    </div>
-  </div>
-  
- -->
-
-
-
 
 <div class="beat-card" *ngIf="beat">
   <div class="cover-container">
     <img [src]="beat.cover_picture" [alt]="beat.title" class="cover" />
     <button class="play-button">
-      <!-- <i class="fa fa-play"></i> -->
+
       <span class="pi pi-play icons"></span> 
     </button>
   </div>
