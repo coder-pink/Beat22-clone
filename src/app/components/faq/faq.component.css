@@ -60,3 +60,69 @@
     font-size: 1rem;
   }
   
+
+
+
+  /* ========== Responsive Styles for FAQ Section ========== */
+
+/* Tablets (≤768px) */
+@media (max-width: 768px) {
+  .faq-container {
+    flex-direction: column;
+    padding: 1.5rem;
+  }
+
+  .faq-container .faq-left,
+  .faq-container .faq-right {
+    margin-right: 0;
+    min-width: 100%;
+  }
+
+  .faq-container .faq-left h2 {
+    font-size: 1.8rem;
+  }
+
+  .faq-container .faq-left p {
+    font-size: 0.95rem;
+  }
+
+  .faq-container .faq-right .faq-item .question {
+    font-size: 1rem;
+  }
+
+  .faq-container .faq-right .faq-item .answer {
+    font-size: 0.95rem;
+  }
+}
+
+/* Mobile (≤480px) */
+@media (max-width: 480px) {
+  .faq-container {
+    padding: 1rem;
+  }
+
+  .faq-container .faq-left h2 {
+    font-size: 1.5rem;
+  }
+
+  .faq-container .faq-left .badge {
+    font-size: 0.7rem;
+    padding: 0.25rem 0.6rem;
+  }
+
+  .faq-container .faq-left p {
+    font-size: 0.9rem;
+  }
+
+  .faq-container .faq-right .faq-item {
+    padding: 0.8rem 0;
+  }
+
+  .faq-container .faq-right .faq-item .question {
+    font-size: 0.95rem;
+  }
+
+  .faq-container .faq-right .faq-item .answer {
+    font-size: 0.9rem;
+  }
+}

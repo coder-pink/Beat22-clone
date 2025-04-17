@@ -9,7 +9,6 @@
   
   .gradient-text {
     background: linear-gradient(to right, #a855f7, #6366f1 100%);
-    /* background: linear-gradient(169deg, #7000FF 0%, #7A00FF 31.77%, #8F00FF 100%); */
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
@@ -48,11 +47,11 @@
   .tag:nth-child(1):hover,
   .tag:nth-child(3):hover {
     background: linear-gradient(110deg, #7000FF 36.5%, #8F00FF 93.9%);
-    border: none; /* Optional: remove border to make it look cleaner */
+    border: none; 
   }
   .tag:hover {
     background: linear-gradient(110deg, #ffbf00 36.5%, #ffee00 93.9%);
-    border: none; /* Optional: no border */
+    border: none; 
   }
 
   /* search */
@@ -78,13 +77,85 @@
   .beat-card-section{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 1rem; /* adjust the gap between cards as needed */
+    gap: 1rem; 
     margin-bottom: 1rem;
    
   }
 
 
+
+  /* ======================= Responsive ======================= */
+
+/* Tablets (<=768px) */
+@media (max-width: 768px) {
+  .explore-header {
+    /* flex-direction: column; */
+    align-items: flex-start;
+  }
+
+  .tag-container {
+    justify-content: flex-start;
+  }
+
+  .search-container {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .refresh-btn {
+    padding: 0.3rem 0.6rem;
+    font-size: 12px;
+  }
+
+  .beat-card-section {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Mobile (<=480px) */
+@media (max-width: 480px) {
+  h1 {
+    font-size: 20px;
+  }
+
+ 
+
+  .tag-container {
+    gap: 8px;
+    margin: 1.5rem 0;
+  }
+
+  .tag {
+    font-size: 13px;
+    padding: 0.3rem 0.6rem;
+  }
+
+  .search-container {
+    padding: 10px;
+    gap: 8px;
+  }
+
+  .search-container input {
+    font-size: 13px;
+  }
+
+  .beat-card-section {
+    grid-template-columns: 1fr;
+  }
+}
   
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

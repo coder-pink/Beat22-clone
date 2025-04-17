@@ -1,6 +1,6 @@
 .container {
     width: 90%;
-    margin: 0 auto; /* centers the container */
+    margin: 0 auto; 
     padding-top: 100px;
   }
   
@@ -9,7 +9,7 @@
   
 }
 
-/* Ensure the header stays at the top */
+
 app-header {
   position: fixed;
   top: 0;
@@ -20,5 +20,10 @@ app-header {
   margin:  0 auto;
 }
 
-/* Add top padding to the content to prevent it from hiding under the fixed header */
 
+
+@media (max-width: 768px) {
+  .container {
+    padding-top: 130px; 
+  }
+}

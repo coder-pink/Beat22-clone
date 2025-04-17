@@ -42,7 +42,7 @@
     right: 12px;
     transform: translateY(-50%);
     cursor: pointer;
-    color: #aaa; /* or #fff if dark background */
+    color: #aaa; 
     font-size: 1.2rem;
     width: 2rem;
   }
@@ -130,3 +130,86 @@
     color: #a259ff;
     font-weight: bold;
   }
+
+
+  /* Tablet (≤768px) */
+@media (max-width: 768px) {
+  .signin-box {
+    width: 80%;
+    padding: 30px 20px;
+  }
+
+  .logo {
+    width: 80px;
+  }
+
+  .input-field {
+    padding: 12px;
+    font-size: 15px;
+  }
+
+  .toggle-password {
+    font-size: 1rem;
+  }
+
+  .signin-btn {
+    padding: 12px;
+    font-size: 15px;
+  }
+
+  .or-divider {
+    width: 70%;
+  }
+
+  .google-btn {
+    width: 70%;
+    font-size: 14px;
+  }
+
+  .signup-link {
+    font-size: 14px;
+  }
+}
+
+/* Mobile (≤480px) */
+@media (max-width: 480px) {
+  .signin-box {
+    width: 90%;
+    padding: 25px 15px;
+  }
+
+  .logo {
+    width: 70px;
+  }
+
+  .input-field {
+    padding: 10px;
+    font-size: 14px;
+  }
+
+  .toggle-password {
+    font-size: 1rem;
+  }
+
+  .signin-btn {
+    padding: 12px;
+    font-size: 14px;
+  }
+
+  .or-divider {
+    width: 60%;
+  }
+
+  .google-btn {
+    width: 75%;
+    font-size: 13px;
+  }
+
+  .signup-link {
+    font-size: 12px;
+  }
+
+  .google-btn img {
+    width: 16px;
+  }
+}

@@ -25,7 +25,7 @@ export type Beat = {
   prices: {
     license_type: string;
     amount: number;
-    final_price: number; // ✅ Added this line
+    final_price: number; 
     currency: string;
     _id: string;
   }[];
