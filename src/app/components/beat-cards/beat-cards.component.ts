@@ -9,36 +9,6 @@ import { CommonModule } from '@angular/common';
   templateUrl: './beat-cards.component.html',
   styleUrls: ['./beat-cards.component.css'],
 })
-// export class BeatCardsComponent implements OnInit {
-  // beats: any[] = [];
-
-  // constructor(private beatService: BeatService) {}
-
-  // ngOnInit(): void {
-  //   this.beatService.getTrendingBeats().subscribe(response => {
-  //     this.beats = response.data.beats;
-  //   });
-  // }
-
-
-  // private beats = inject(BeatService);
-  // beat : Beat[] = [];
-
-  //  ngOnInit(): void {
-  //    this.getBeats();
-  //  }
-
-
-  //  getBeats(){
-  //   this.beats.getTrendingBeats().subscribe({
-  //     next : (res) => {
-  //       console.log(res);
-  //       this.beat = res.data;
-  //       console.log(this.beat);
-  //     }
-  //    })
-  //  }
-// }
 
 
 export class BeatCardsComponent{
