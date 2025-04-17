@@ -10,9 +10,21 @@ import { HttpClient } from '@angular/common/http';
 export class BeatService{
   private http = inject(HttpClient);
 
+
+  // getTrendingBeats() {
+  //   return this.http.get('/api/playlist/trending');
+  // }
+
   getTrendingBeats() {
     return this.http.get('https://api-server.illpeoplemusic.com/api/v2/playlist/trending');
   }
+
+
+
+  // getTrendingBeats() {
+  //   // Use relative path to call the serverless function
+  //   return this.http.get('/api/trending-beats');
+  // }
 }
 
 export type Beat = {

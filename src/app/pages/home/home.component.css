@@ -22,7 +22,9 @@ app-header {
 
 
 
-@media (max-width: 768px) {
+
+
+@media (max-width: 480px) {
   .container {
     padding-top: 130px; 
   }
